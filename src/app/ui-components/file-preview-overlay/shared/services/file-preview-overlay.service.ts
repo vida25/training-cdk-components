@@ -44,6 +44,7 @@ export class FilePreviewOverlayService implements OnDestroy {
     const dialogRef = new FilePreviewOverlayRef(overlayRef);
     const overlayComponent = this.attachDialogContainer(overlayRef, mergedConfig, dialogRef);
 
+    dialogRef.componentInstance = overlayComponent;
     // overlayRef.attach(filePreviewPortal);
     overlayRef.backdropClick().subscribe(() => dialogRef.close());
 

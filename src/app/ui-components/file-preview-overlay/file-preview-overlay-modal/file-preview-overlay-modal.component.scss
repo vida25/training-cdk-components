@@ -20,3 +20,17 @@ img {
 .overlay-content {
   padding: 1em;
 }
+
+.spinner-wrapper {
+  pointer-events: none;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
