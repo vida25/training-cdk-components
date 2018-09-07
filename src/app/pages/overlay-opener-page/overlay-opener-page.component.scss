@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  flex-direction: column;
+}
+p {
+  width: 80%;
+}
+.active {
+  color: chocolate;
+}
+.origin {
+  cursor: pointer;
+  text-decoration: underline;
+}

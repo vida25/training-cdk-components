@@ -1,0 +1,38 @@
+
+<p>
+  Bellow is Materail CDK overlay opener. You can quickly move the mouse over it and overlay
+  won't get opened. It will become open only after you keep the mouse on the opener for 300 ms. It will close the overlay on Escape or when you leave the overlay for 100ms.
+</p>
+
+<div
+  [class.active]="isOpened" class="origin"
+   #overlayOrigin="cdkOverlayOrigin"
+   cdkOverlayOrigin
+>
+  mouse over on me for 300ms to open overlay
+</div>
+
+<act-modal-window
+  [overlayOrigin]="overlayOrigin"
+   (close)="isOpened = false"
+   (open)="isOpened = true"
+>
+  <div class="select-field">
+    <div class="option"><mat-checkbox>label 1</mat-checkbox></div>
+    <div class="option"><mat-checkbox>label 1</mat-checkbox></div>
+    <div class="option"><mat-checkbox>label 1</mat-checkbox></div>
+    <div class="option"><mat-checkbox>label 1</mat-checkbox></div>
+    <div class="option"><mat-checkbox>label 1</mat-checkbox></div>
+    <div class="option"><mat-checkbox>label 1</mat-checkbox></div>
+  </div>
+</act-modal-window>
+
+
+<div class="select-field">
+  <div class="option"></div>
+  <div class="option"></div>
+  <div class="option"></div>
+  <div class="option"></div>
+  <div class="option"></div>
+  <div class="option"></div>
+</div>

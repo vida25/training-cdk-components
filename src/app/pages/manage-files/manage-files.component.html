@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">Outputs</mat-toolbar>
+
+<mat-list>
+  <mat-list-item *ngFor="let file of files">
+    <span>{{ file.name }}</span>
+    <span class="spacer"></span>
+    <act-file-preview-overlay [file]="file"></act-file-preview-overlay>
+  </mat-list-item>
+</mat-list>
+
